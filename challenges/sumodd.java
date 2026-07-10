@@ -23,4 +23,5 @@ public static void sumOdd (int num1){
    System.out.println("sum of "+sum);
     
 }
+
 }
