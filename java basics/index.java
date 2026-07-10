@@ -2,9 +2,17 @@
 
 public class index {
 public static void main(String[] args) {
-   int num1 = 8;
-   int num2 =5;
-   System.out.println((float) (num1/num2) );
+   int rows =0;
+   while (rows <5) { 
+       System.out.print("*");
+       int i =0;
+       while (i<rows) { 
+           System.out.print(" *");
+         i++;
+       }
+       System.out.println();
+       rows++;                   
+   }
    
 }
 } 
