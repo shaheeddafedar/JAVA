@@ -1,16 +1,19 @@
 import java.util.Scanner;
 
-public class fibonanchi {
+public class fibonacci {
     public static void main(String[] args) {
         Scanner input = new Scanner(System.in);
         System.out.print("Enter Number  ");
         int num1 = input.nextInt();
-        System.out.println("fibonanchi numbers are");
-             fibonanchi(num1);
+        System.out.println("fibonacci numbers are");
+             fibonacci(num1);
 
     }
 
-    public static void fibonanchi(int num) {
+    public static void fibonacci(int num) {
+        if (num<0) {
+            System.out.println("Please enter a non-negative number");
+        }
         int first = 0;
         int second = 1;
         int next = 0;
