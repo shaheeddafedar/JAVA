@@ -40,8 +40,10 @@ public class Armstrong {
             result = result * base;
         }
 
+        
         return result;
     }
+
 
     public static int checkCount(int num) {
         int count = 0;
