@@ -8,9 +8,9 @@ public class palindrome {
         int copynum = num;
         int checkplaindrome = palindrome(num);
         if ( checkplaindrome == copynum) {
-            System.out.println("number is plaindrome");
+            System.out.println("Number "+num+ " is plaindrome");
         } else {
-            System.out.println("Number is not a palindrome ");
+            System.out.println("Number "+num+ " is not a palindrome ");
         }
     }
 
