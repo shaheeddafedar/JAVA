@@ -12,10 +12,11 @@ public class Armstrong {
             System.out.println(num + " is Not armStrong number");
 
         }
+         input.close();
     }
 
     public static boolean armStrong(int num) {
-        int digit = 0;
+        int digit;
         int checkarm = 0;
         int originalnum = num;
         int count = checkCount(num);
@@ -24,10 +25,10 @@ public class Armstrong {
             checkarm += power(digit, count);
             num /= 10;
         }
-        if (checkarm == originalnum) {
-            return true;
-        } else {
+        if(checkarm != originalnum){
             return false;
+        } else {
+            return true;
         }
 
     }

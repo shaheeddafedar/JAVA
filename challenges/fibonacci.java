@@ -7,6 +7,7 @@ public class fibonacci {
         int num1 = input.nextInt();
         System.out.println("fibonacci numbers are");
              fibonacci(num1);
+             
 
     }
 
