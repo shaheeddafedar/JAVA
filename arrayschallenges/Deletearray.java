@@ -10,7 +10,9 @@ public class Deletearray {
         System.out.print("Enter the Lenght of array  ");
         int size = input.nextInt();
         int[] array = new int[size];
+        
         inputarray(array, input);
+
         System.out.print("Enter the Deleting key");
        int deletekey =input.nextInt();
        System.out.println("New array is ");
