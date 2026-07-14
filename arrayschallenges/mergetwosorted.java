@@ -1,4 +1,4 @@
-// // 47. Create a program to merge two sorted arrays.
+// 47. Create a program to merge two sorted arrays.
 
 
  package arrayschallenges;
@@ -63,6 +63,8 @@ public class mergetwosorted {
 
 // package arrayschallenges;
 
+// import java.util.Arrays;
+
 // public class mergetwosorted {
 //     public static void main(String[] args) {
 //         int []arr1=ArrayUtility.inputArray();
@@ -70,7 +72,9 @@ public class mergetwosorted {
 //         int length =arr1.length+arr2.length;
 //         int []arr3= mergeArray(arr1, arr2);
 //         System.out.println("Merged Array is ");
-//         System.out.println(arr3);
+       
+//             System.out.println(Arrays.toString(arr3));
+        
 
 //         } 
 
