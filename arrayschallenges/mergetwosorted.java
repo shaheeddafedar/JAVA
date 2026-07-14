@@ -15,7 +15,7 @@ public class mergetwosorted {
         System.out.println("Merged Array:");
 
         for (int i = 0; i < mergedArray.length; i++) {
-            System.out.print(mergedArray[i] + " ");
+            System.out.println(mergedArray[i] + " ");
         }
     }
 
