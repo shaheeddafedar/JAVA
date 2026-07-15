@@ -5,7 +5,7 @@ public class Sumofdiagonal {
     public static void main(String[] args) {
          int[][] array = ArrayUtility.input2DArray();
          int sum = sum(array);
-         System.out.println(sum);
+         System.out.println("Sum : "+sum);
     }
     public static int sum(int [][]array){
         int lenght=array.length;
