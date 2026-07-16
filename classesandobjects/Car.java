@@ -7,17 +7,21 @@ public class Car {
     float currentFuelInListers;
     int noOfSheets;
 
-    public void drive(){
-        if (currentFuelInListers==0) {
+    public Car start(){
+         if (currentFuelInListers==0) {
             System.out.println("Car is Out of Fuel");
         } else if (currentFuelInListers<=5) {
-            System.out.println("Car is driving");
+            System.out.println("Car started  bruhhh...");
             System.out.println("Car is Under the Reserve");
-            currentFuelInListers--;
         } else {
+            System.out.println("Car started  bruhhh...");
+        }
+        return this;
+    }
+
+    public void drive(){
         System.out.println("Car is driving");
         currentFuelInListers--;
-        }
 
     }
     public  void  addFuel(float fuel){
