@@ -1,28 +1,56 @@
 package classesandobjects.Challenge;
 
 public class Course {
-  static  int maxCapacity;
+    static int maxCapacity;
 
-  String courseName;
-  String enrolledStudents;
+    String courseName;
+    int enrollement;
 
-  static {
-    maxCapacity=0;
-  }
-  {
-    maxCapacity++;
-  }
-
-    public Course() {
+    static {
+        maxCapacity = 50;
     }
 
-    public Course(String courseName, String enrolledStudents) {
+    String [] enrolledStudent = new String[maxCapacity];
+
+  static int setMaxCapacity(int capacity) {
+        maxCapacity = capacity;
+        return capacity;
+    }
+
+
+    public Course(String courseName) {
         this.courseName = courseName;
-        this.enrolledStudents = enrolledStudents;
+        this.enrollement = 0;
     }
-    void  enrolledStudent(){
-        System.out.println("The Enrolled Student is "+ enrolledStudents);
+
+    void enrollStudent(String studentName) {
+
+        if (enrollement < maxCapacity) {
+            enrolledStudent[enrollement] = studentName;
+            enrollement++;
+            System.out.println(studentName + " enrolled successfully.");
+        } else {
+            System.out.println("Course is full.");
+        }
+
     }
-    
+
+    void unenrollStudent(String studentName) {
+        if (enrollement > 0) {
+            enrollement--;
+            System.out.println("The unenrollStudent Student is " + studentName);
+
+        }
+
+    }
+
    
+    public static void main(String[] args) {
+        Course Neet = new Course("Neet2026");
+        Course jee = new Course("jee2026");
+
+        Neet.enrollStudent("sami");
+        Neet.unenrollStudent("sami");
+
+    }
 }
