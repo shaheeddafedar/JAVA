@@ -5,7 +5,15 @@ public class Car {
     String color;
     float maxSpeed;
     float currentFuelInListers;
-    int noOfSheets;
+    int noOfSheet;
+
+    Car (){
+      color="Black";
+      noOfWheels=4;
+      maxSpeed=200;
+      currentFuelInListers=7;
+      noOfSheet=5;
+    }
 
     public Car start(){
          if (currentFuelInListers==0) {
@@ -22,7 +30,6 @@ public class Car {
     public void drive(){
         System.out.println("Car is driving");
         currentFuelInListers--;
-
     }
     public  void  addFuel(float fuel){
         currentFuelInListers+=fuel;
