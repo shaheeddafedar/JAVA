@@ -2,19 +2,24 @@ package classesandobjects;
 
 public class Car {
     int noOfWheels;
-    String color;
+    String colour;
     float maxSpeed;
     float currentFuelInListers;
     int noOfSheet;
 
-    Car (){
-      color="Black";
+    Car (String colour){
+      this.colour=colour;
       noOfWheels=4;
       maxSpeed=200;
       currentFuelInListers=7;
       noOfSheet=5;
     }
 
+    // constructor Chaning
+        Car (){
+      colour="Black";
+    }
+    
     public Car start(){
          if (currentFuelInListers==0) {
             System.out.println("Car is Out of Fuel");

@@ -10,14 +10,14 @@ public class Driver {
    //  Audi.addFuel(9);
    //  Audi.start().drive();
 
-  Car swift = new Car();
+  Car swift = new Car("green");
   swift.start();
   swift.drive();
   System.out.println(  swift.getCurrentFuelLevel()
 );
-System.out.println(swift.color);
-swift.color="white";
-System.out.println(swift.color);
+System.out.println(swift.colour);
+swift.colour="white";
+System.out.println(swift.colour);
 
  }   
 }
