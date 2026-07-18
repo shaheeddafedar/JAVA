@@ -10,13 +10,12 @@ public class Course {
         maxCapacity = 50;
     }
 
-    String [] enrolledStudent = new String[maxCapacity];
+    String[] enrolledStudent = new String[maxCapacity];
 
-  static int setMaxCapacity(int capacity) {
+    static int setMaxCapacity(int capacity) {
         maxCapacity = capacity;
         return capacity;
     }
-
 
     public Course(String courseName) {
         this.courseName = courseName;
@@ -37,14 +36,25 @@ public class Course {
 
     void unenrollStudent(String studentName) {
         if (enrollement > 0) {
-            enrollement--;
+
             System.out.println("The unenrollStudent Student is " + studentName);
+
+            for (int i = 0; i < enrollement; i++) {
+                if (studentName.equals(enrolledStudent[i])) {
+                    for (int j = i; j <= enrollement - 1; j++) {
+                        enrolledStudent[j] = enrolledStudent[j + 1];
+                    }
+                    enrolledStudent[enrollement - 1] = null;
+                    enrollement--;
+                    break;
+
+                }
+            }
 
         }
 
     }
 
-   
     public static void main(String[] args) {
         Course Neet = new Course("Neet2026");
         Course jee = new Course("jee2026");
