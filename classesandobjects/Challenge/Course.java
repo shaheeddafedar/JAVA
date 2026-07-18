@@ -37,22 +37,27 @@ public class Course {
     void unenrollStudent(String studentName) {
         if (enrollement > 0) {
 
-            System.out.println("The unenrollStudent Student is " + studentName);
+            System.out.println("The unenrolled student is " + studentName);
 
             for (int i = 0; i < enrollement; i++) {
                 if (studentName.equals(enrolledStudent[i])) {
-                    for (int j = i; j <= enrollement - 1; j++) {
+
+                    for (int j = i; j < enrollement - 1; j++) {
                         enrolledStudent[j] = enrolledStudent[j + 1];
                     }
+
                     enrolledStudent[enrollement - 1] = null;
                     enrollement--;
-                    break;
 
+                    System.out.println(studentName + " unenrolled successfully.");
+                    return;
                 }
             }
 
+            System.out.println(studentName + " not found.");
+        } else {
+            System.out.println("No students are enrolled.");
         }
-
     }
 
     public static void main(String[] args) {
