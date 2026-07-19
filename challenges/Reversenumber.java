@@ -5,6 +5,8 @@ public class Reversenumber {
     Scanner input = new Scanner(System.in);
     System.out.print("Enter Number  ");
     int num1 = input.nextInt();
+        input.close();
+
     int Reversenumber = revers(num1);
     System.out.println("Your reversed Number is "+Reversenumber);
     }

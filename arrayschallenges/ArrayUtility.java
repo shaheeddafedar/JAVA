@@ -17,6 +17,7 @@ public class ArrayUtility {
             System.out.print("Enter element " + i + ": ");
             array[i] = input.nextInt();
         }
+    input.close();
 
         return array;
     }
@@ -39,6 +40,8 @@ public class ArrayUtility {
                         array[i][j] = input.nextInt();
           }
         }
+            input.close();
+
 
         return array;
     }

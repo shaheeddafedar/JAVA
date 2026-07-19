@@ -5,7 +5,8 @@ public class primeNumber {
         Scanner input = new Scanner(System.in);
         System.out.print(" Enter a Number  ");
         int num1 = input.nextInt();
-        if (primeNumber(num1)) {
+        input.close();
+        if (primenumber(num1)) {
             System.out.println(num1 + " is a primeNumber");
         } else {
             System.out.println(num1 + " is not a primeNumber");
@@ -13,7 +14,7 @@ public class primeNumber {
         }
     }
 
-    public static boolean primeNumber(int num) {
+    public static boolean primenumber(int num) {
         if (num <= 1) {
             System.out.println(num + "is not a prime Number");
         }

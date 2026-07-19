@@ -8,9 +8,9 @@ public class Student {
            
         System.out.println("Total Books: " + Book.getTotalBooks());
 
-
+        
         s1.borrowBook();
-
+        s3.borrowBook();
         s2.borrowBook();
 
     }

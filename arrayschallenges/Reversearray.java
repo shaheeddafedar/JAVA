@@ -13,7 +13,7 @@ public class Reversearray {
         int[] array = new int[size];
 
         inputarray(array, input);
-        Reversearray(array);
+        Reversearrays(array);
 
     }
 
@@ -24,7 +24,7 @@ public class Reversearray {
         }
     }
 
-    public static void Reversearray(int[] array) {
+    public static void Reversearrays(int[] array) {
         for (int i = array.length - 1; i >= 0; i--) {
             System.out.println(array[i]);
 

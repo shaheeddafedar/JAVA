@@ -6,6 +6,7 @@ public static void main(String[] args) {
 
 System.out.print("Enter a number: ");
 int oddnumber = input.nextInt();
+input.close();
 sumOdd(oddnumber);
    
 }

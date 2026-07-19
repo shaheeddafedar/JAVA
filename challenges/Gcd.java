@@ -46,6 +46,7 @@ public class Gcd {
         int num1 = input.nextInt();
         System.out.print("Enter Number two ");
         int num2 = input.nextInt();
+        input.close();
         int GCD = GCD(num1, num2);
         System.out.println("GCD is " + GCD);
 

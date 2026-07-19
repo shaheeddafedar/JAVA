@@ -5,8 +5,9 @@ public class palindrome {
         Scanner input = new Scanner(System.in);
         System.out.print("Enter Number  ");
         int num = input.nextInt();
+        input.close();
         int copynum = num;
-        int checkplaindrome = palindrome(num);
+        int checkplaindrome = palindrome_num(num);
         if ( checkplaindrome == copynum) {
             System.out.println("Number "+num+ " is plaindrome");
         } else {
@@ -14,7 +15,7 @@ public class palindrome {
         }
     }
 
-    public static int palindrome(int num) {
+    public static int palindrome_num(int num) {
         int checkplaindrome = 0;
         int digit = 0;
         while (num > 0) {

@@ -9,6 +9,7 @@ public class mintwo {
         int num1 = input.nextInt();
         System.out.println("Enter Number two");
         int num2 = input.nextInt();
+        input.close();
 
         int minimum = num1 < num2 ? num1 : num2;
 

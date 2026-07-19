@@ -7,12 +7,13 @@ public class LCM {
     System.out.print("Enter Number one ");
     int num1 = input.nextInt();
     System.out.print("Enter Number two ");
+        input.close();
     int num2 = input.nextInt();
-    int LCM = LCM(num1, num2);
+    int LCM = lcm(num1, num2);
    System.out.println("LCM is "+ LCM);
 }
 
-public static int LCM(int num1, int num2){
+public static int lcm(int num1, int num2){
     int i =1;
     while (true) { 
         if (i%num1==0 && i%num2 ==0) {

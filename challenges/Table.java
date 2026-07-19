@@ -7,10 +7,11 @@ public class Table {
         Scanner input = new Scanner(System.in);
         System.out.print("enter your number for table");
         int n = input.nextInt();
+        input.close();
         int i =1;
      while (i<=10) { 
         int sum = n*i;
-                  System.out.println(sum);
+         System.out.println(sum);
 
          i++;
      }

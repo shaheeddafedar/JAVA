@@ -67,5 +67,8 @@ public class Course {
         Neet.enrollStudent("sami");
         Neet.unenrollStudent("sami");
 
+        jee.enrollStudent("san");
+
+
     }
 }

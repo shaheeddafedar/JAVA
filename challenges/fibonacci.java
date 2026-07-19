@@ -5,14 +5,14 @@ public class fibonacci {
         Scanner input = new Scanner(System.in);
         System.out.print("Enter Number  ");
         int num1 = input.nextInt();
+        input.close();
         System.out.println("fibonacci numbers are");
-             fibonacci(num1);
-             
+        fibonacci_num(num1);
 
     }
 
-    public static void fibonacci(int num) {
-        if (num<0) {
+    public static void fibonacci_num(int num) {
+        if (num < 0) {
             System.out.println("Please enter a non-negative number");
         }
         int first = 0;
@@ -31,25 +31,22 @@ public class fibonacci {
     }
 }
 
-
-
-
 // public class Fibonacci {
 
-//     public static void main(String[] args) {
+// public static void main(String[] args) {
 
-//         int num = 7;
-//         int first = 0;
-//         int second = 1;
+// int num = 7;
+// int first = 0;
+// int second = 1;
 
-//         for (int i = 0; i <= num; i++) {
+// for (int i = 0; i <= num; i++) {
 
-//             System.out.println(first);
+// System.out.println(first);
 
-//             int next = first + second;
+// int next = first + second;
 
-//             first = second;
-//             second = next;
-//         }
-//     }
+// first = second;
+// second = next;
+// }
+// }
 // }
