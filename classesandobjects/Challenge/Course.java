@@ -8,6 +8,7 @@ public class Course {
 
     static {
         maxCapacity = 50;
+        
     }
 
     String[] enrolledStudent = new String[maxCapacity];
