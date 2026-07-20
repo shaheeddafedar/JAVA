@@ -8,8 +8,6 @@ public class ternanryabsolute {
     public void absolutevalue(int num) {
         int result = num>=0 ? num :-num;
         System.out.println("The Absolute Value of "+num+" is :"+result);
-
-
     }
 
     public static void main(String[] args) {
