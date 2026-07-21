@@ -21,6 +21,7 @@ public class passowrdchecker {
         } while (!check.check_passowrd(Password));
 
         System.out.println("Your Passowrd is Valid");
+        input.close();
     }
 
 }
