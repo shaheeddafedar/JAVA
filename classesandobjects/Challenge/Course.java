@@ -72,6 +72,8 @@ public class Course {
         Course Neet = new Course("Neet2026");
         Course jee = new Course("jee2026");
 
+        jee.enrollStudent("shah");
+
         Neet.enrollStudent("sami");
         Neet.enrollStudent("SRK");
         Neet.enrollStudent("SALMAN");
@@ -79,6 +81,5 @@ public class Course {
         Neet.enrollStudent("ROHIT");
         Neet.unenrollStudent("SRK");
         Neet.TotalStudentname();
-
     }
 }
