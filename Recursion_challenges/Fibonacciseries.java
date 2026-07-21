@@ -14,7 +14,7 @@ public class Fibonacciseries {
             System.out.println(Fibonacci(i));
             
         }
-        
+        input.close();
     }
     public static int Fibonacci(int n){
        if (n==0) {
