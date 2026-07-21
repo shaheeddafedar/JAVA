@@ -18,7 +18,6 @@ public class palindromeresursion {
         return true;
     }
     int lastpost = str.length()-1;
-        System.out.println(str.charAt(lastpost));
     if (str.charAt(0)!=str.charAt(lastpost)) {
         return false;
     }
