@@ -14,6 +14,6 @@ public class numberguessing {
         guessnum = input.nextInt();
         } while (guessnum!=number);
         System.out.println("The Enter Number for guess is Correct");
-
+     input.close();
     }
 }
