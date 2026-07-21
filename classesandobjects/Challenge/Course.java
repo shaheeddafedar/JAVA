@@ -7,7 +7,7 @@ public class Course {
     int enrollement;
 
     static {
-        maxCapacity = 50;
+        maxCapacity = 5;
     }
 
     String[] enrolledStudent = new String[maxCapacity];
@@ -60,15 +60,25 @@ public class Course {
         }
     }
 
+    void TotalStudentname() {
+        if (enrollement > 0) {
+            for (int i = 0; i < enrollement; i++) {
+                System.out.println(enrolledStudent[i]);
+            }
+        }
+    }
+
     public static void main(String[] args) {
         Course Neet = new Course("Neet2026");
         Course jee = new Course("jee2026");
 
         Neet.enrollStudent("sami");
-        Neet.unenrollStudent("sami");
-
-        jee.enrollStudent("san");
-
+        Neet.enrollStudent("SRK");
+        Neet.enrollStudent("SALMAN");
+        Neet.enrollStudent("VIRAT");
+        Neet.enrollStudent("ROHIT");
+        Neet.unenrollStudent("SRK");
+        Neet.TotalStudentname();
 
     }
 }
