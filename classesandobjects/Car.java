@@ -14,22 +14,19 @@ public class Car {
         currentFuelInListers = 7;
         noOfSheet = 5;
     }
-
-    @Override
-    public String toString() {
-        return "Car{" +
-                "colour='" + colour + '\'' +
-                ", wheels=" + noOfWheels +
-                ", maxSpeed=" + maxSpeed +
-                ", fuel=" + currentFuelInListers +
-                ", seats=" + noOfSheet +
-                '}';
-    }
+ 
 
     // constructor Chaning
     Car() {
         colour = "Black";
     }
+
+    @Override
+    public String toString() {
+        return "Car [noOfWheels=" + noOfWheels + ", colour=" + colour + ", maxSpeed=" + maxSpeed
+                + ", currentFuelInListers=" + currentFuelInListers + ", noOfSheet=" + noOfSheet + "]";
+    }
+
 
     public Car start() {
         if (currentFuelInListers == 0) {
