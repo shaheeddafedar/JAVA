@@ -2,7 +2,9 @@
 // random number, and the user has to guess it.
 package challenges7chapter;
 
+
 import java.util.Scanner;
+
 
 public class guessgame {
     public static void main(String[] args) {
