@@ -19,7 +19,6 @@ public class guessgame {
                 System.out.println("Given TOO high");
             } else if (guess < random) {
                 System.out.println("Given too low");
-            
             }
         } while (random != guess);
         System.out.println("🎉 Correct!");
