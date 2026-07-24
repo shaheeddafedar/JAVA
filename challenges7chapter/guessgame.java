@@ -4,7 +4,6 @@ package challenges7chapter;
 
 import java.util.Scanner;
 
-
 public class guessgame {
     public static void main(String[] args) {
         Scanner input = new Scanner(System.in);
