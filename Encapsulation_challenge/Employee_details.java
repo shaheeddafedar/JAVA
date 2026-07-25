@@ -6,6 +6,5 @@ public class Employee_details {
         employee.displayEmployeeDetails();
         employee.setName("Alex");
         employee.displayEmployeeDetails();
-
     }
 }
