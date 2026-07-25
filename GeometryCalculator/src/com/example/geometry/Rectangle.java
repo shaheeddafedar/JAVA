@@ -1,19 +1,19 @@
 package GeometryCalculator.src.com.example.geometry;
 
 public class Rectangle {
-    private int lenght;
+    private int length;
     private int width;
 
-    public Rectangle(int lenght,int width){
-        this.lenght=lenght;
+    public Rectangle(int length,int width){
+        this.length=length;
         this.width=width;
     }
 
-    public int getlenght(){
-        return lenght;
+    public int getlength(){
+        return length;
     }
-    public void setlenght (int lenght){
-        this.lenght=lenght;
+    public void setlength (int length){
+        this.length=length;
     }
     public int getwidth(){
         return width;

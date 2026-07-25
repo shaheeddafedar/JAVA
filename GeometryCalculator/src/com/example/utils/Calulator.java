@@ -1,22 +1,31 @@
 package GeometryCalculator.src.com.example.utils;
 
-import GeometryCalculator.src.com.example.geometry.Cricle;
+import java.util.Scanner;
+
+import GeometryCalculator.src.com.example.geometry.Circle;
 import GeometryCalculator.src.com.example.geometry.Rectangle;
 
 public class Calulator {
     public static void main(String[] args) {
-        double pie = Math.PI;
-        Cricle cricle = new Cricle(5);
-        cricle.setradius(5);
-        cricle.setradius(5);
-         double Area_Cricle = pie*cricle.getradius()*cricle.getradius();
-         System.out.println("Area of Cricle is "+Area_Cricle);
+        Scanner input = new Scanner(System.in);
+        System.out.print("Enter the Radius of Cricle");
+        int radius = input.nextInt();
+        System.out.print("Enter the length of Rectangle ");
+        int length = input.nextInt();
+        System.out.print("Enter the width of Rectangle ");
+        int width = input.nextInt();
+        input.close();
+
+        Circle Circle = new Circle(5);
+        Circle.setradius(radius);
+        double Area_Circle = Math.PI * Math.pow(Circle.getradius(), 2);
+        System.out.println("Area of Circle is " + Area_Circle);
 
         Rectangle rectangle = new Rectangle(10, 20);
-        rectangle.setlenght(10);
-        rectangle.setwidth(20);
-        double Area_rectangle =rectangle.getlenght()*rectangle.getwidth();
-         System.out.println("Area of rectangle is "+Area_rectangle);
+        rectangle.setlength(length);
+        rectangle.setwidth(width);
+        double Area_rectangle = rectangle.getlength() * rectangle.getwidth();
+        System.out.println("Area of rectangle is " + Area_rectangle);
 
     }
 }

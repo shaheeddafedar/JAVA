@@ -1,9 +1,9 @@
 package GeometryCalculator.src.com.example.geometry;
 
-public class Cricle {
+public class Circle {
     private int radius;
 
-    public Cricle(int radius) {
+    public Circle(int radius) {
         this.radius = radius;
     }
 
