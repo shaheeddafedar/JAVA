@@ -45,6 +45,7 @@ public class Employee {
         this.salary = salary;
     }
     
+
      void displayEmployeeDetails(){
         System.out.println("Name "+name);
         System.out.println("Age "+age);
