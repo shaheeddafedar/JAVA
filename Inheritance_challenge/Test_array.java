@@ -6,4 +6,5 @@ public class Test_array {
         st.mean();
         st.median();
     }
+    
 }
