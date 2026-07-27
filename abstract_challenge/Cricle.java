@@ -1,28 +1,27 @@
 package abstract_challenge;
 
-public class Cricle extends Shape {
+public class Cricle  extends Shape {
     protected int radius;
 
-    public Cricle (int radius){
+    public Cricle  (int radius){
       this.radius=radius;
     }
 
 
-    double area=0;
 
     @Override
-    public void calculateArea() {
-        area=Math.PI*Math.pow(radius,2);
+    public double calculateArea() {
+        return Math.PI*Math.pow(radius,2);
     }
      @Override
     public String toString() {
-        return "Cricle [ Area=" + area + "]";
+        return "Cricle  [ Area=" + calculateArea() + "]";
     }
 
 
 
     public static void main(String[] args) {
-        Cricle c = new Cricle(5);
+        Cricle  c = new Cricle (5);
        c.calculateArea();
        System.out.println(c);
     }
