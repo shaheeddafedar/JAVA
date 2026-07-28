@@ -8,7 +8,6 @@ public interface Payment {
     }
 
     public static void main(String[] args) {
-        
         processPayment(new CreditCard());
         processPayment(new UPI());
         processPayment(new PayPal());
