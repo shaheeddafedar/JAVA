@@ -11,7 +11,6 @@ public interface Payment {
         processPayment(new CreditCard());
 
         processPayment(new UPI());
-
         processPayment(new PayPal());
 
     }
