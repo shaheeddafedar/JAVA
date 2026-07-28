@@ -4,23 +4,22 @@ package Chapter9_challenge;
 
 public class Calculator {
 
-    protected int add(int a, int b) {
+    protected static  int  add(int a, int b) {
         return a + b;
     }
 
-    protected int add(int a, int b, int c) {
+    protected static  int add(int a, int b, int c) {
         return a + b + c;
     }
 
-    protected double add(double a, double b) {
+    protected static  double add(double a, double b) {
         return a + b;
     }
 
     public static void main(String[] args) {
-        Calculator c = new Calculator();
-        System.out.println(c.add(10, 20));
-        System.out.println(c.add(25.6, 35.6));
-        System.out.println(c.add(10, 20, 30));
+        System.out.println(add(10, 20));
+        System.out.println(add(25.6, 35.6));
+        System.out.println(add(10, 20, 30));
     }
 
 }
