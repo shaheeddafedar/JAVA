@@ -18,8 +18,7 @@ public class Calculator {
 
     public static void main(String[] args) {
         System.out.println(add(10, 20));
-        System.out.println(add(25.6, 35.6));
-        
+        System.out.println(add(25.6, 35.6));  
         System.out.println(add(10, 20, 30));
     }
 
