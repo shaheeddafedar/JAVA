@@ -11,6 +11,7 @@ public class Calculator {
     protected static  int add(int a, int b, int c) {
         return a + b + c;
     }
+    
 
     protected static  double add(double a, double b) {
         return a + b;
