@@ -4,7 +4,6 @@
 // • Implement a try-catch block to handle ArithmeticException.
 // • Display a user-friendly message if division by zero occurs.
 
-
 package Exception__challenge;
 
 import java.util.Scanner;
@@ -12,23 +11,27 @@ import java.util.Scanner;
 public class Exception {
     public static void main(String[] args) {
         Scanner input = new Scanner(System.in);
-        System.out.println("Please Enter Number 1 ");
+        System.out.print("Please Enter Number 1 ");
         int num1 = input.nextInt();
-         System.out.println("Please Enter Number 2 ");
+        System.out.print("Please Enter Number 2 ");
         int num2 = input.nextInt();
         input.close();
-        double div = divide(num1, num2);
-        System.out.println("Result is : "+div);
+        divide(num1, num2);
     }
 
-    public static double divide(int num1,int num2){
-        double div=0;
+    public static void divide(int num1, int num2) {
+        int result;
         try {
-            div=num1/num2;
+            result = num1 / num2;
+            System.out.println("Result is " + result);
         } catch (ArithmeticException e) {
-    System.out.println("Cannot divide by zero. Please enter a non-zero divisor."+e);
+            if (e.getMessage().equals("/Zero")) {
+                System.out.println("Cannot divide by zero. Please enter a non-zero divisor." + e);
+
+            } else {
+                throw e;
+            }
         }
-        return div;
-        
+
     }
 }
