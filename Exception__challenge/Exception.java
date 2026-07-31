@@ -17,16 +17,16 @@ public class Exception {
          System.out.println("Please Enter Number 2 ");
         int num2 = input.nextInt();
         input.close();
-        int div = divide(num1, num2);
+        double div = divide(num1, num2);
         System.out.println("Result is : "+div);
     }
 
-    public static int divide(int num1,int num2){
-        int div=0;
+    public static double divide(int num1,int num2){
+        double div=0;
         try {
             div=num1/num2;
         } catch (ArithmeticException e) {
-         System.out.println(e);  
+    System.out.println("Cannot divide by zero. Please enter a non-zero divisor."+e);
         }
         return div;
         
