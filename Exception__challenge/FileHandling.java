@@ -5,7 +5,6 @@
 // • Implement a try-catch block to handle FileNotFoundException.
 // • Display a message informing the user if the file is not found.
 
-
 package Exception__challenge;
 
 import java.io.FileNotFoundException;
@@ -18,16 +17,17 @@ public class FileHandling {
         Scanner input = new Scanner(System.in);
         System.out.print("Enter Your File name ");
         String fileName = input.next();
-System.out.println("Current directory: " + System.getProperty("user.dir"));
-    try(FileReader reader = new FileReader(fileName)) {
-        int read=0;
-       while ((read = reader.read()) != -1) {
+        // System.out.println("Current directory: " + System.getProperty("user.dir"));
+        try (FileReader reader = new FileReader(fileName)) {
+            int read = 0;
+            while ((read = reader.read()) != -1) {
                 System.out.print((char) read);
             }
-    } catch (FileNotFoundException e) {
-     System.out.println("Execption occured "+e.getMessage());
-    }catch (IOException e) {
-    System.out.println("execption handling"+e.getMessage());
-}
+        } catch (FileNotFoundException e) {
+            System.out.println("Execption occured " + e.getMessage());
+        } catch (IOException e) {
+            System.out.println("execption handling" + e.getMessage());
+        }
+        input.close();
     }
 }
