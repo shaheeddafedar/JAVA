@@ -25,7 +25,7 @@ public class Exception {
             result = num1 / num2;
             System.out.println("Result is " + result);
         } catch (ArithmeticException e) {
-            if (e.getMessage().equals("/Zero")) {
+            if (e.getMessage().equals("/ by zero")) {
                 System.out.println("Cannot divide by zero. Please enter a non-zero divisor." + e);
 
             } else {
