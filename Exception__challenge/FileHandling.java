@@ -24,7 +24,7 @@ public class FileHandling {
                 System.out.print((char) read);
             }
         } catch (FileNotFoundException e) {
-            System.out.println("Execption occured " + e.getMessage());
+            System.out.printf("%s File not Found ",fileName);
         } catch (IOException e) {
             System.out.println("execption handling" + e.getMessage());
         }
