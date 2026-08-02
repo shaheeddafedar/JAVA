@@ -7,7 +7,7 @@ import java.util.List;
 public class second {
     public static void main(String[] args) {
         // List<String> list = new ArrayList<>();
-                List<String> list = Arrays.asList("hi","are","you");
+                List<String> list = Arrays.asList("Apple", "Banana", "Mango", "Orange", "Grapes");
             Collections.sort(list);
                 System.out.println(list);
 
