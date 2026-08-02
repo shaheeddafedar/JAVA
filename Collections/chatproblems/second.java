@@ -1,3 +1,8 @@
+// Create an ArrayList<String>.
+
+// Add five fruits.
+
+// Sort them in ascending order using the Collections class.
 package Collections.chatproblems;
 
 import java.util.Arrays;

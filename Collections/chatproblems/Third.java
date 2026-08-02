@@ -1,3 +1,12 @@
+// Q23.
+
+// Create a HashSet<Integer>.
+
+// Add duplicate numbers.
+
+// Print the set.
+
+// What do you observe?
 package Collections.chatproblems;
 
 import java.util.ArrayList;
