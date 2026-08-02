@@ -9,15 +9,9 @@ import java.util.Scanner;
 
 public class Challenge91 {
     public static void main(String[] args) {
-        List<Integer> list = new ArrayList<>();
+        List<Integer> list = Utility.inputList();
         Scanner input = new Scanner(System.in);
 
-        System.out.print("How many numbers? ");
-        int n = input.nextInt();
-
-        for (int i = 0; i < n; i++) {
-            list.add(input.nextInt());
-        }
         System.out.println("Eneter the element to find frequency");
         int f = input.nextInt();
 
