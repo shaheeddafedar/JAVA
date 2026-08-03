@@ -9,6 +9,7 @@ package Collections.chatproblems;
 import java.util.Comparator;
 import java.util.PriorityQueue;
 
+
 public class Student {
     String name;
     double marks;
