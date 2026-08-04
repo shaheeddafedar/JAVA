@@ -8,7 +8,6 @@
 
 // What do you observe?
 package Collections.chatproblems;
-
 import java.util.HashSet;
 
 public class Third {
