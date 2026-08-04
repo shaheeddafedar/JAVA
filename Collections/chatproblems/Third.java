@@ -18,5 +18,5 @@ HashSet<Integer> hash = new HashSet<>();
   hash.add(50);
   hash.add(60);
   System.out.println(hash);
-  }
+}
 }
