@@ -1,9 +1,9 @@
 package Multi_Threading;
 
-public class Thread1 extends Thread {
+public class helloThread extends Thread {
     private int X;
 
-    public Thread1(int x) {
+    public helloThread(int x) {
         X = x;
     }
 

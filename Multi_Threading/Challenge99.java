@@ -4,8 +4,8 @@ package Multi_Threading;
 
 public class Challenge99 extends Thread {
     public static void main(String[] args) {
-        Thread1 t1 = new Thread1(1);
-        Thread2 t2 = new Thread2(2);
+        helloThread t1 = new helloThread(1);
+        helloThread t2 = new helloThread(2);
 
         t1.start();
         try {
