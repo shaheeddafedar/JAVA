@@ -1,7 +1,6 @@
 // 93 Create a program that reverses the elements of a List and prints the reversed list.
 package Collections;
 
-import java.util.Collections;
 import java.util.List;
 
 public class Challenge93 {

@@ -18,8 +18,11 @@ class Challenge95 {
         }
 
         System.out.printf("Your string has %d unique characters",
-                unique.size());
+        unique.size());
+        input.close();
     }
+
+
 }
 
 
