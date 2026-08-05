@@ -9,6 +9,7 @@ public class Challenge101 {
         Thread1 t2 = new Thread1(2);
         Thread1 t3 = new Thread1(3);
 
+        
         t1.start();
 
         try {
