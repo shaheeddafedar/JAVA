@@ -15,5 +15,7 @@ public class Thread3 extends Thread {
         System.out.println("Exception during Thread "+num);
     }
    }
-
+   public int getNum() {
+    return num;
+   }
 }

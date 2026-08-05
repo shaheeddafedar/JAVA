@@ -16,6 +16,10 @@ public class Thread1 extends Thread {
     }
    }
 
+   public int getNum() {
+    return num;
+   }
+
 
 
 }
