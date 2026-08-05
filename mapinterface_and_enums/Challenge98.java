@@ -9,25 +9,24 @@ import java.util.Scanner;
 public class Challenge98 {
     public static void main(String[] args) {
         Map<String, String> map = new HashMap<>();
-        map.put("India", "New Delhi");
-        map.put("United States", "Washington, D.C.");
-        map.put("United Kingdom", "London");
-        map.put("Japan", "Tokyo");
-        map.put("Australia", "Canberra");
-        map.put("Canada", "Ottawa");
-        map.put("France", "Paris");
+        map.put("india", "New Delhi");
+        map.put("united states", "Washington, D.C.");
+        map.put("united kingdom", "London");
+        map.put("japan", "Tokyo");
+        map.put("australia", "Canberra");
+        map.put("canada", "Ottawa");
+        map.put("france", "Paris");
 
         Scanner input = new Scanner(System.in);
-        System.out.println("Enter The country Name");
-        String Country = input.nextLine();
+        System.out.print("Enter The country Name : ");
+        String country = input.nextLine().trim().toLowerCase();
 
-        if (map.containsKey(Country)) {
-            System.out.println("The Captial of "+Country+" is "+map.get(Country));
-        }else{
-            System.out.println("Country not avaible");
+        if (map.containsKey(country)) {
+            System.out.println("The Captial of " + country + " is " + map.get(country));
+        } else {
+            System.out.println("country not avaible in Your System");
         }
         input.close();
     }
-
 
 }
