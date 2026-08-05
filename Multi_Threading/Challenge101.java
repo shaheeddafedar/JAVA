@@ -6,8 +6,8 @@ package Multi_Threading;
 public class Challenge101 {
     public static void main(String[] args) {
         Thread1 t1 = new Thread1(1);
-        Thread2 t2 = new Thread2(2);
-        Thread3 t3 = new Thread3(3);
+        Thread1 t2 = new Thread1(2);
+        Thread1 t3 = new Thread1(3);
 
         t1.start();
 
