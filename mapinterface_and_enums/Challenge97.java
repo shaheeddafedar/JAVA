@@ -5,6 +5,7 @@ public class Challenge97 {
 
         for (Weekday days : Weekday.values()) {
             if (days.isWeekday()) {
+                System.out.println("The Weekdays are");
                 System.out.println(days);
                 
             }
