@@ -4,9 +4,8 @@ package mapinterface_and_enums;
 
 public class Challenge96 {
     public static void main(String[] args) {
-        Days d = Days.valueOf("Monday");
-        for (Days values : Days.values()) {
-            System.out.println(values);
+        for (Days days : Days.values()) {
+            System.out.println(days + " : " + days.action);
         }
 
     }
