@@ -15,9 +15,17 @@ Sunday ("Holiday / Rest day");
 
 public String action;
 
+
+
+
 private Days(String action) {
     this.action = action;
 }
+
+
+
+
+
 
 
 }
