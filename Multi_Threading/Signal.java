@@ -14,7 +14,7 @@ public class Signal extends Thread {
             Thread.sleep(color.getTime());
 
         } catch (InterruptedException e) {
-            System.out.println("Interrupted During Signal Colour "+e);
+            System.out.println("Interrupted During Signal Colour " + e);
         }
         System.out.println(" InActive Signal " + color);
     }
