@@ -1,19 +1,21 @@
 package Multi_Threading;
 
 public class Signal extends Thread {
-    String  Color;
+    private Signalcolor color;
 
-    public Signal(String Color) {
-        this.Color = Color;
+    public Signal(Signalcolor color) {
+        this.color = color;
     }
 
-    synchronized  void SignalLight(){
-        System.out.println("Current Signal light is "+Color);
+    public void run() {
+        System.out.println(" Active Signal " + color);
+
         try {
-                     sleep(5000);
-        } catch ( InterruptedException e) {
-            System.out.println("Exetin during the Sleep "+e);
+            Thread.sleep(color.getTime());
+
+        } catch (InterruptedException e) {
+            System.out.println("Interrupted During Signal Colour "+e);
         }
+        System.out.println(" InActive Signal " + color);
     }
 }
-
