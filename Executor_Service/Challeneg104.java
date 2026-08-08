@@ -11,18 +11,22 @@ import java.util.concurrent.TimeUnit;
 
 public class Challeneg104 {
     public static void main(String[] args) {
-        Thread104 t1 = new Thread104("shah");
-        Thread104 t2 = new Thread104("sal");
-        Thread104 t3 = new Thread104("sab");
 
         ExecutorService execute  =  Executors.newFixedThreadPool(3);
-     execute.submit(t1);
-     execute.submit(t2);
-     execute.submit(t3);
-     execute.shutdown();
+        
+        for (int i = 1; i <=10; i++) {
+            Thread104 t1 = new Thread104();
+                    execute.submit(t1);
+        }
+       execute.shutdown();
+   try {
+      if (!execute.awaitTermination(20, TimeUnit.SECONDS)) {
+        execute.shutdownNow();
+                System.out.println("Forecfully Shutdown");
 
-     if (!execute.awaitTermination(5, TimeUnit.SECONDS)) {
-        execute.shutdown();
      }
+   } catch (Exception e) {
+  System.out.println("Exception during Shutdown "+e);
+}
     }
 }
