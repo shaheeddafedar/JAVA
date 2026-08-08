@@ -1,6 +1,6 @@
 package Executor_Service;
 
-public class Thread104 extends Thread {
+public class Thread104 implements Runnable {
     private String name;
 
     public Thread104(String name) {

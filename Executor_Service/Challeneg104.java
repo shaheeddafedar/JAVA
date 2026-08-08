@@ -7,6 +7,7 @@ package Executor_Service;
 
 import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
+import java.util.concurrent.TimeUnit;
 
 public class Challeneg104 {
     public static void main(String[] args) {
@@ -18,7 +19,10 @@ public class Challeneg104 {
      execute.submit(t1);
      execute.submit(t2);
      execute.submit(t3);
-
      execute.shutdown();
+
+     if (!execute.awaitTermination(5, TimeUnit.SECONDS)) {
+        execute.shutdown();
+     }
     }
 }
