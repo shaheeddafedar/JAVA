@@ -7,7 +7,6 @@ public class problem4 implements Runnable  {
     public void run(){
   System.out.println("name is +"+Thread.currentThread().getName());
     }
-    
 
     public static void main(String[] args) {
         ExecutorService excute = Executors.newFixedThreadPool(3);
