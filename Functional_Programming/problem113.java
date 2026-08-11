@@ -1,6 +1,4 @@
-// 113.Given an array of integers, create a stream, use the distinct 
-// operation to remove duplicates, and collect the result into 
-// a new list
+// 113.Given an array of integers, create a stream, use the distinct operation to remove duplicates, and collect the result into a new list
 
 package Functional_Programming;
 import java.util.List;

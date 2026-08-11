@@ -1,7 +1,4 @@
-// 114.Create a list of employees with name and salary fields. 
-// Write a comparator that sorts the employees by salary. 
-// Then, use this comparator to sort your list using the sort 
-// stream operation.
+// 114.Create a list of employees with name and salary fields.  Write a comparator that sorts the employees by salary.  Then, use this comparator to sort your list using the sort stream operation.
 
 package Functional_Programming;
 
