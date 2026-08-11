@@ -19,7 +19,7 @@ public class problem112 {
 
     public static Optional<String> Testotpional(String name) {
         if(name == null || name.isEmpty()){
-            return null;
+            return Optional.empty();
         }
         return Optional.of(name.toUpperCase());
     }
