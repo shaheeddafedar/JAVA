@@ -4,6 +4,7 @@ package Functional_Programming;
 import java.util.List;
 import java.util.stream.Collectors;
 
+
 public class problem113 {
     public static void main(String[] args) {
         List<Integer> number = List.of(1,2,3,4,5,2,4,6,7);
