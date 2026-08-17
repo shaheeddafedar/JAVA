@@ -1,4 +1,4 @@
-# JAVA ☕
+# JAVA 
 
 A collection of my **Java learning and practice**, covering core concepts, advanced features, and hands-on challenges.
 
