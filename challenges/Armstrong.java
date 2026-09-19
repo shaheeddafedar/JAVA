@@ -12,6 +12,7 @@ public class Armstrong {
             System.out.println(num + " is Not armStrong number");
 
         }
+        
          input.close();
     }
     public static boolean armStrong(int num) {
