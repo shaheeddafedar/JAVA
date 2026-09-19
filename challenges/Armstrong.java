@@ -1,7 +1,6 @@
 import java.util.Scanner;
 
 public class Armstrong {
-    
     public static void main(String[] args) {
         Scanner input = new Scanner(System.in);
         System.out.print("Enter Number  ");
@@ -15,7 +14,6 @@ public class Armstrong {
         }
          input.close();
     }
-
     public static boolean armStrong(int num) {
         int digit;
         int checkarm = 0;
